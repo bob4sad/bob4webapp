@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Не Школа Гитары</title>
+</head>
+<body>
+    <header>
+        <div class="header_poster">
+            <div class="header_poster__title">
+                <span>Не Школа Гитары</span>
+            </div>
+            <div class="header_poster__content">
+                <span class="header_poster__content">Сыграй свою Любимую песню на ГИТАРЕ уже Завтра абсолютно Бесплатно</span>
+            </div>
+            <div class="header_poster__button">
+                <a href="#popup">
+                    <button>Забронировать Бесплатное занятие</button>
+                </a>
+            </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="info">
+            <div class="info__block">
+                <div class="info__block__title">Занятия в группе</div>
+                <div class="info__block__desc">по 4-6 человека</div>
+            </div>
+            <div class="info__block">
+                <div class="info__block__title">Обучение гитаре с нуля</div>
+                <div class="info__block__desc">Обучим даже если Вы никогда не держали гитару в руках</div>
+
+            </div>
+            <div class="info__block">
+                <div class="info__block__title">Гибкий график</div>
+                <div class="info__block__desc">Подстроим занятия под Ваше расписание</div>
+
+            </div>
+            <div class="info__block">
+                <div class="info__block__title">Индивы</div>
+                <div class="info__block__desc">В программе курса помимо групповых занятий на гитаре присутствуют индивидуальные</div>
+
+            </div>
+        </div>
+        <div class="request">
+            <div class="request_title">
+                <span>Забронируйте Бесплатный урок и получите консультацию по программе обучения</span>
+            </div>
+            <div class="request_form">
+                <form method="POST" action="/form" >
+                    <select class="request_form__select" name="city" id="city" required>
+                        <option value="" disabled selected="selected"> Выберите город </option>
+						<option value="Абакан">Абакан</option>
+						<option value="Алма-ата">Алма-Ата</option>
+						<option value="Альметьевск">Альметьевск</option>
+						<option value="Архангельск">Архангельск</option>
+						<option value="Балашиха">Балашиха</option>
+						<option value="Барнаул">Барнаул</option>
+						<option value="Белгород">Белгород</option>
+						<option value="Березники">Березники</option>
+						<option value="Брест">Брест</option>
+						<option value="Владимир">Владимир</option>
+						<option value="Волгоград">Волгоград</option>
+						<option value="Вологда">Вологда</option>
+						<option value="Волжский">Волжский</option>
+						<option value="Воронеж">Воронеж</option>
+						<option value="Воткинск">Воткинск</option>
+						<option value="Дзержинск">Дзержинск</option>
+						<option value="Екатеринбург">Екатеринбург</option>
+						<option value="Ижевск">Ижевск</option>
+						<option value="Иркутск">Иркутск</option>
+						<option value="Йошкар-Ола">Йошкар-Ола</option>
+						<option value="Казань">Казань</option>
+						<option value="Калининград">Калининград</option>
+						<option value="Калуга">Калуга</option>
+						<option value="Кемерово">Кемерово</option>
+						<option value="Киев">Киев</option>
+						<option value="Киров">Киров</option>
+						<option value="Коломна">Коломна</option>
+						<option value="Королев">Королев</option>
+						<option value="Кострома">Кострома</option>
+						<option value="Краснодар">Краснодар</option>
+						<option value="Курск">Курск</option>
+						<option value="Липецк">Липецк</option>
+						<option value="Магнитогорск">Магнитогорск</option>
+						<option value="Махачкала">Махачкала</option>
+						<option value="Минск">Минск</option>
+						<option value="Москва">Москва</option>
+						<option value="Мурманск">Мурманск</option>
+						<option value="Набережные Челны">Набережные Челны</option>
+						<option value="Нальчик">Нальчик</option>
+						<option value="Невинномысск">Невинномысск</option>
+						<option value="Нижнекамск">Нижнекамск</option>
+						<option value="Нижний Тагил">Нижний Тагил</option>
+						<option value="Новокузнецк">Новокузнецк</option>
+						<option value="Новороссийск">Новороссийск</option>
+						<option value="Новосибирск">Новосибирск</option>
+						<option value="Обнинск">Обнинск</option>
+						<option value="Омск">Омск</option>
+						<option value="Оренбург">Оренбург</option>
+						<option value="Орёл">Орёл</option>
+						<option value="Пермь">Пермь</option>
+						<option value="Подольск">Подольск</option>
+						<option value="Пятигорск">Пятигорск</option>
+						<option value="Ростов-на-Дону">Ростов-на-Дону</option>
+						<option value="Рыбинск">Рыбинск</option>
+						<option value="Самара">Самара</option>
+						<option value="Санкт-Петербург">Санкт-Петербург</option>
+						<option value="Саратов">Саратов</option>
+						<option value="Севастополь">Севастополь</option>
+						<option value="Северодвинск">Северодвинск</option>
+						<option value="Серпухов">Серпухов</option>
+						<option value="Симферополь">Симферополь</option>
+						<option value="Смоленск">Смоленск</option>
+						<option value="Сочи">Сочи</option>
+						<option value="Ставрополь">Ставрополь</option>
+						<option value="Старый оскол">Старый оскол</option>
+						<option value="Стерлитамак">Стерлитамак</option>
+						<option value="Сыктывкар">Сыктывкар</option>
+						<option value="Тамбов">Тамбов</option>
+						<option value="Тверь">Тверь</option>
+						<option value="Тольятти">Тольятти</option>
+						<option value="Томск">Томск</option>
+						<option value="Тюмень">Тюмень</option>
+						<option value="Уфа">Уфа</option>
+						<option value="Хабаровск">Хабаровск</option>
+						<option value="Челябинск">Челябинск</option>
+						<option value="Электросталь">Электросталь</option>
+						<option value="Ярославль">Ярославль</option>
+                    </select>
+                    <input class="request_form__tel" type="tel" id="phone" name="phone" required>
+                    <input class="request_form__submit" type="submit" placeholder="Записаться" class="custom_button" value="Записаться">
+                </form>
+            </div>
+        </div>
+        
+    </main>
+
+    
+
+
+    <footer>
+        made by bob4sad
+    </footer>
+
+    <div id="popup">
+        <div id="okno">
+            <form method="POST" action="/form">
+                <select class="request_form__select" name="city" id="city" required>
+                    <option value="" disabled selected="selected"> Выберите город </option>
+                    <option value="Абакан">Абакан</option>
+                    <option value="Алма-ата">Алма-Ата</option>
+                    <option value="Альметьевск">Альметьевск</option>
+                    <option value="Архангельск">Архангельск</option>
+                    <option value="Балашиха">Балашиха</option>
+                    <option value="Барнаул">Барнаул</option>
+                    <option value="Белгород">Белгород</option>
+                    <option value="Березники">Березники</option>
+                    <option value="Брест">Брест</option>
+                    <option value="Владимир">Владимир</option>
+                    <option value="Волгоград">Волгоград</option>
+                    <option value="Вологда">Вологда</option>
+                    <option value="Волжский">Волжский</option>
+                    <option value="Воронеж">Воронеж</option>
+                    <option value="Воткинск">Воткинск</option>
+                    <option value="Дзержинск">Дзержинск</option>
+                    <option value="Екатеринбург">Екатеринбург</option>
+                    <option value="Ижевск">Ижевск</option>
+                    <option value="Иркутск">Иркутск</option>
+                    <option value="Йошкар-Ола">Йошкар-Ола</option>
+                    <option value="Казань">Казань</option>
+                    <option value="Калининград">Калининград</option>
+                    <option value="Калуга">Калуга</option>
+                    <option value="Кемерово">Кемерово</option>
+                    <option value="Киев">Киев</option>
+                    <option value="Киров">Киров</option>
+                    <option value="Коломна">Коломна</option>
+                    <option value="Королев">Королев</option>
+                    <option value="Кострома">Кострома</option>
+                    <option value="Краснодар">Краснодар</option>
+                    <option value="Курск">Курск</option>
+                    <option value="Липецк">Липецк</option>
+                    <option value="Магнитогорск">Магнитогорск</option>
+                    <option value="Махачкала">Махачкала</option>
+                    <option value="Минск">Минск</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Мурманск">Мурманск</option>
+                    <option value="Набережные Челны">Набережные Челны</option>
+                    <option value="Нальчик">Нальчик</option>
+                    <option value="Невинномысск">Невинномысск</option>
+                    <option value="Нижнекамск">Нижнекамск</option>
+                    <option value="Нижний Тагил">Нижний Тагил</option>
+                    <option value="Новокузнецк">Новокузнецк</option>
+                    <option value="Новороссийск">Новороссийск</option>
+                    <option value="Новосибирск">Новосибирск</option>
+                    <option value="Обнинск">Обнинск</option>
+                    <option value="Омск">Омск</option>
+                    <option value="Оренбург">Оренбург</option>
+                    <option value="Орёл">Орёл</option>
+                    <option value="Пермь">Пермь</option>
+                    <option value="Подольск">Подольск</option>
+                    <option value="Пятигорск">Пятигорск</option>
+                    <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                    <option value="Рыбинск">Рыбинск</option>
+                    <option value="Самара">Самара</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Саратов">Саратов</option>
+                    <option value="Севастополь">Севастополь</option>
+                    <option value="Северодвинск">Северодвинск</option>
+                    <option value="Серпухов">Серпухов</option>
+                    <option value="Симферополь">Симферополь</option>
+                    <option value="Смоленск">Смоленск</option>
+                    <option value="Сочи">Сочи</option>
+                    <option value="Ставрополь">Ставрополь</option>
+                    <option value="Старый оскол">Старый оскол</option>
+                    <option value="Стерлитамак">Стерлитамак</option>
+                    <option value="Сыктывкар">Сыктывкар</option>
+                    <option value="Тамбов">Тамбов</option>
+                    <option value="Тверь">Тверь</option>
+                    <option value="Тольятти">Тольятти</option>
+                    <option value="Томск">Томск</option>
+                    <option value="Тюмень">Тюмень</option>
+                    <option value="Уфа">Уфа</option>
+                    <option value="Хабаровск">Хабаровск</option>
+                    <option value="Челябинск">Челябинск</option>
+                    <option value="Электросталь">Электросталь</option>
+                    <option value="Ярославль">Ярославль</option>
+                </select>
+                <input class="request_form__tel" type="tel" id="phone" name="phone" required>
+                <input class="request_form__submit" type="submit" placeholder="Записаться" class="custom_button" value="Записаться">
+            </form>
+          <a href="#" class="close">✕</a>
+        </div>
+    </div>
+</body>
+</html>
