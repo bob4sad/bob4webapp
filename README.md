@@ -1,10 +1,10 @@
 # Web app
 
-## this app getting post request and send data to mail
+## this app getting post request and send data to email
 . \
 . 
 ### **.env example**
-TO_EMAIL=to_mail \
-FROM_EMAIL=from_mail \
-SENDER_EMAIL_USERNAME=username_for_mail \
-SENDER_EMAIL_PASSWORD=password_for_mail
+TO_EMAIL=to_email \
+FROM_EMAIL=from_email \
+SENDER_EMAIL_USERNAME=username_for_email \
+SENDER_EMAIL_PASSWORD=password_for_email

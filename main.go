@@ -14,15 +14,23 @@ import "flag" //DEBUG
 
 func sendEmailData(data string) {
     m := gomail.NewMessage()
+    
     m.SetHeader("To", os.Getenv("TO_EMAIL"))
     m.SetHeader("From", os.Getenv("FROM_EMAIL"))
     m.SetHeader("Subject", "New customer!")
     m.SetBody("text/plain", data)
-    d := gomail.NewDialer("smtp.gmail.com", 587, os.Getenv("SENDER_EMAIL_USERNAME"), os.Getenv("SENDER_EMAIL_PASSWORD"))
+    
+    d := gomail.NewDialer("smtp.gmail.com", 
+        587, 
+        os.Getenv("SENDER_EMAIL_USERNAME"), 
+        os.Getenv("SENDER_EMAIL_PASSWORD"),
+    )
+    
     d.TLSConfig = &tls.Config{InsecureSkipVerify: true}
+    
     if err := d.DialAndSend(m); err != nil {
-      fmt.Println(err)
-      panic(err)
+        fmt.Println(err)
+        panic(err)
     }
 
     return
@@ -57,12 +65,11 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-
     err := godotenv.Load()
     if err != nil {
         log.Fatal("Error loading .env file")
     }
-
+    
 
 
     //DEBUG
